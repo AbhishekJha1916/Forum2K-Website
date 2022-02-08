@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: Ubuntu;}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 0, 200, 0.3), rgba(204, 0, 255, 0.3)), url('images/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 75%, 0 0);
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 50%;
+    z-index: -1;
+    background: linear-gradient(to right, #991e70 0%, #cd3cae 0%, #f616ab 100%);
+}
+
+.nav-item a{
+    font-family: Ubuntu;
+}
+
+.navbar-brand{
+    font-family: Ubuntu;
+    font-weight: 700;
+    color: #e062aa!important;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-buttons a{
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover{
+    color: #d150aa;
+    background: white;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Extra Header CSS Starts */
+
+.header-extradiv{
+    width: 100%; height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra-div{
+    background: white;
+    border: medium none;
+    /* padding: 20px; */
+    border-radius: 30px;
+    transition: 0.3s;
+    /* margin-right: 1px; */
+    /* width: 20%!important; */
+}
+
+.extra-div h2, .servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 0.1;
+    word-spacing: 4px;
+}
+
+.extra-div p{
+    font-size: 1.0rem;
+    color: #606060;
+}
+
+.extra-div i{
+    font-size: 30px;
+    color: #ff34bb;
+}
+
+.extra-div i:hover{
+    color: #991e70;
+}
+
+.extra-div:hover{
+    /* box-shadow: 0 0 20px 0 rgba(255, 199, 238, 0.658); */
+    background: linear-gradient(to right, #991e7050 0%rgba(205, 60, 174, 0.274)ae 0%, #f616ab46 100%);
+    transform: translateY(-10px);
+}
+
+/* Extra Header CSS Ends */
+
+/* Services CSS starts */
+
+.serviceoffers{
+    background: #f7f7f9;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.container p{
+    color: #606060;
+    font-size: 1.0rem;
+}
+
+.container a{
+    text-decoration: none!important;
+}
+
+.container .thumbnail:hover{
+    transform: translateY(-2px);
+}
+
+.set-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.service-icons{
+    font-size: 40px;
+    color: #ff34bb;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* align-items: center; */
+}
+
+.container .set p{
+    font-size: 0.9rem;
+    color: #606060;
+}
+
+/* Services CSS ends */
+
+
+/* Prodects done CSS starts */
+
+.project-work{
+    margin: 100px 0;
+}
+
+.project-work h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Prodects done CSS ends */
+
+
+/* Pricing CSS starts */
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(160deg, #ff00c89a 55%, #fff 0%);
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card{
+    transition: 0.4s ease;
+}
+
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #606060;
+    background: white!important;
+    padding: 25px 9!important;
+}
+
+.card-body li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+
+}
+
+.card-body{
+    padding: 30px 0!important;
+}
+
+.card-footer{
+    background: white!important;
+    padding: 30px 0!important;
+}
+
+.card-footer a{
+    border: 1px solid #ff34bb;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #ff34bb;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card:hover a{
+    color: #ffffff;
+    background: #ff00c89a;
+    text-decoration: none;
+    /* border: 1px solid #ffffff; */
+    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
+}
+
+.card:hover{
+    transform: translateY(-30px);
+}
+
+.card:hover .money{
+    color: #ff34bb
+}
+
+.card:hover .card-header{
+    color: #ff34bb;
+}
+
+/* Pricing CSS ends */
+
+
+/* Feedback CSS starts */
+
+.happyclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    background-color: #ff34bb
+}
+
+.box p{
+    color: #606060;
+}
+
+.box:hover p{
+    color: white;
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #ff34bb!important;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    border: 50%;
+    margin-top: 20px;
+}
+
+.box a:after{
+    content: "@";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #991e70 0%, #cd3cae 0%, #f616ab 100%);
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.box h3{
+    font-size: 13px;
+    font-weight: 400;
+    color: #606060;
+    margin-bottom: 10px;
+}
+/* Feedback CSS ends */
+
